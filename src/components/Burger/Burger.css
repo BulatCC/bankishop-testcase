@@ -1,0 +1,58 @@
+.burger {
+    display: none;
+    position: relative;
+    min-width: 2.4rem;
+    height: 2.4rem;
+    border: none;
+    background-color: transparent;
+    z-index: 2;
+}
+
+.burger__open,
+.burger__close {
+    position: absolute;
+    left: 0;
+}
+
+.burger__close:after {
+    opacity: 0;
+}
+
+.burger__open:after,
+.burger__close:after,
+.burger__close:before {
+    content: "";
+    position: absolute;
+    background: #343030;
+    width: 2.4rem;
+    height: 0.2rem;
+    transition: opacity 0.3s;
+}
+
+.burger__open:after {
+    box-shadow: 0 -0.9rem #343030, 0 0.9rem #343030;
+}
+
+.active .burger__open:after {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.active .burger__close:after {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.active .burger__close:after {
+    transform: rotate(-45deg);
+}
+
+.active .burger__close:before {
+    transform: rotate(45deg);
+}
+
+@media (max-width: 1024px) {
+    .burger {
+        display: block;
+    }
+}

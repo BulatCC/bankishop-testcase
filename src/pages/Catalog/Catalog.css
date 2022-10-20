@@ -1,0 +1,44 @@
+.catalog__title {
+    margin-bottom: 4rem;
+}
+
+.catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -2.6%;
+    margin-top: -3.2rem;
+}
+
+.catalog__list-item {
+    width: 22.3%;
+    margin-left: 2.55%;
+    margin-top: 3.2rem;
+}
+
+@media (max-width: 1024px) { 
+    .catalog__list-item {
+        width: 30.75%;
+    }
+}
+
+@media (max-width: 768px) { 
+    .catalog__list {
+        margin-top: -2.4rem;
+    }
+
+    .catalog__list-item {
+        width: 47.4%;
+        margin-top: 2.4rem;
+    }
+}
+
+@media (max-width: 500px) { 
+    .catalog__list {
+        margin-left: 0;
+    }
+
+    .catalog__list-item {
+        width: 100%;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,27 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.4rem 0.5rem;
+    background-color: #382E2B;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    line-height: 1.5;
+    font-family: 'Merriweather';
+    font-size: 1.4rem;
+}
+
+.btn img {
+    margin-right: 0.7rem;
+}
+
+.btn:hover {
+    background-color: #776763;
+}
+
+.btn[disabled] {
+    background-color: #C1B4B1;
+    pointer-events: none;
+}

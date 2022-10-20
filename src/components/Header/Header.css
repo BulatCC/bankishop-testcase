@@ -1,0 +1,38 @@
+.header {
+    padding: 2.4rem 0;
+    margin-bottom: 4.5rem;
+    border-bottom: 1px solid #d3d1d1;
+}
+
+.header .input {
+    margin-left: auto;
+    min-width: 29.4rem;
+}
+
+.header .btn {
+    min-width: 12.2rem;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1024px) { 
+    .header .burger {
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .input {
+        min-width: unset;
+        width: 100%;
+    }
+
+    .header .btn {
+        min-width: 10rem;
+    }
+}
+
+
